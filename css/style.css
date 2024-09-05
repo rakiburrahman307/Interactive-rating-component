@@ -17,7 +17,7 @@
   background-color: hsl(213, 19%, 18%);
   width: 400px;
   border-radius: 25px;
-  height: 300px;
+  height: 350px;
   padding: 28px;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
@@ -51,7 +51,7 @@
   font-weight: 700;
   margin-bottom: 10px;
 }
-.rating-container-pra {
+.rating-container-para {
   color: hsl(217, 12%, 63%);
   font-size: 15px;
   text-wrap: wrap;
@@ -64,6 +64,7 @@
   flex-direction: row;
   justify-items: center;
   align-items: center;
+  margin-bottom: 20px;
 }
 .rating-container input[type="radio"] {
   display: none;
@@ -98,5 +99,75 @@
   background-color: hsl(25, 97%, 53%);
 }
 .button-container{
-    
+    width: 100%;
+}
+.btn-submit{
+    color:hsl(0, 0%, 100%);
+    cursor: pointer;
+    width: 100%;
+    padding: 20px 10px;
+    border-radius: 50px;
+    border: none;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: hsl(25, 97%, 53%);
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    transition: background-color .5s ease;
+    -webkit-transition: background-color .5s ease;
+    -moz-transition: background-color .5s ease;
+    -ms-transition: background-color .5s ease;
+    -o-transition: background-color .5s ease;
+}
+.btn-submit:hover{
+    color: black;
+ background-color: hsl(0, 0%, 100%);
+}
+.feedback-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    gap: 25px;
+}
+.feedback-container img{
+    width: 160px;
+    height: 100px;
+}
+.feedback-para-container{
+    background-color: hsl(213, 18%, 22%);
+    padding: 5px 20px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+.feedback-para-container p{
+    color: hsl(25, 97%, 53%);
+    font-size: 15px;
+    text-align: center;
+}
+.feedback-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    gap: 15px;
+}
+.feedback-content h2{
+    color: hsl(0, 0%, 100%);
+    font-size: 25px;
+    font-weight: 700;
+}
+.feedback-content p{
+    color: hsl(217, 12%, 63%);
+    font-size: 15px;
+    line-height: 23px;
+    text-wrap: wrap;
+    text-align: center;
+    text-justify: auto;
 }
