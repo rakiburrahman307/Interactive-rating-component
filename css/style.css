@@ -1,6 +1,7 @@
 * {
   padding: 0px;
   margin: 0px;
+  font-family: "Overpass", system-ui;
   box-sizing: border-box;
 }
 
@@ -14,6 +15,7 @@
   align-items: center;
 }
 .container-contents {
+  display: block;
   background-color: hsl(213, 19%, 18%);
   width: 400px;
   border-radius: 25px;
@@ -62,6 +64,7 @@
   display: flex;
   gap: 20px;
   flex-direction: row;
+  justify-content: center;
   justify-items: center;
   align-items: center;
   margin-bottom: 20px;
@@ -95,79 +98,179 @@
   background-color: hsl(0, 0%, 100%);
   color: black;
 }
+.rating-container label:focus {
+  outline: 2px solid hsl(25, 97%, 53%);
+  outline-offset: 2px;
+}
 .rating-container label:hover {
   background-color: hsl(25, 97%, 53%);
 }
-.button-container{
-    width: 100%;
+.button-container {
+  width: 100%;
 }
-.btn-submit{
-    color:hsl(0, 0%, 100%);
-    cursor: pointer;
-    width: 100%;
-    padding: 20px 10px;
-    border-radius: 50px;
-    border: none;
-    text-align: center;
-    font-size: 15px;
-    font-weight: 700;
-    background-color: hsl(25, 97%, 53%);
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
-    transition: background-color .5s ease;
-    -webkit-transition: background-color .5s ease;
-    -moz-transition: background-color .5s ease;
-    -ms-transition: background-color .5s ease;
-    -o-transition: background-color .5s ease;
+.btn-submit {
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  width: 100%;
+  padding: 20px 10px;
+  border-radius: 50px;
+  border: none;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  background-color: hsl(25, 97%, 53%);
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  transition: background-color 0.3s ease;
+  -webkit-transition: background-color 0.3s ease;
+  -moz-transition: background-color 0.3s ease;
+  -ms-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
 }
-.btn-submit:hover{
-    color: black;
- background-color: hsl(0, 0%, 100%);
+.btn-submit:hover {
+  color: black;
+  background-color: hsl(0, 0%, 100%);
 }
-.feedback-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    gap: 25px;
+
+.container-submitted {
+  display: none;
+  background-color: hsl(213, 19%, 18%);
+  width: 400px;
+  border-radius: 25px;
+  height: 350px;
+  padding: 28px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
 }
-.feedback-container img{
-    width: 160px;
-    height: 100px;
+.feedback-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  gap: 25px;
 }
-.feedback-para-container{
-    background-color: hsl(213, 18%, 22%);
-    padding: 5px 20px;
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
+.feedback-container img {
+  width: 160px;
+  height: 100px;
 }
-.feedback-para-container p{
-    color: hsl(25, 97%, 53%);
-    font-size: 15px;
-    text-align: center;
+.feedback-para-container {
+  background-color: hsl(213, 18%, 22%);
+  padding: 5px 20px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
 }
-.feedback-content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
+.feedback-para-container p {
+  color: hsl(25, 97%, 53%);
+  font-size: 15px;
+  text-align: center;
+}
+.feedback-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  gap: 15px;
+}
+.feedback-content h2 {
+  color: hsl(0, 0%, 100%);
+  font-size: 25px;
+  font-weight: 700;
+}
+.feedback-content p {
+  color: hsl(217, 12%, 63%);
+  font-size: 15px;
+  line-height: 23px;
+  text-wrap: wrap;
+  text-align: center;
+  text-justify: auto;
+}
+.credit-text {
+  font-size: 14px;
+  color: hsl(217, 12%, 63%);
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* tablets and smaller devices */
+@media screen and (max-width: 768px) {
+  .container-contents,
+  .container-submitted {
+    width: 90%;
+    padding: 20px;
+    height: auto;
+  }
+
+  .rating-container {
     gap: 15px;
+  }
+
+  .rating-container label {
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .btn-submit {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .feedback-container img {
+    width: 140px;
+    height: 80px;
+  }
+
+  .feedback-para-container p {
+    font-size: 14px;
+  }
+
+  .feedback-content h2 {
+    font-size: 22px;
+  }
+
+  .feedback-content p {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
-.feedback-content h2{
-    color: hsl(0, 0%, 100%);
-    font-size: 25px;
-    font-weight: 700;
-}
-.feedback-content p{
-    color: hsl(217, 12%, 63%);
-    font-size: 15px;
-    line-height: 23px;
-    text-wrap: wrap;
-    text-align: center;
-    text-justify: auto;
+
+/* For mobile phones  */
+@media screen and (max-width: 425px) {
+  .container-contents,
+  .container-submitted {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .rating-container label {
+    width: 35px;
+    height: 35px;
+    font-size: 13px;
+  }
+
+  .btn-submit {
+    padding: 12px;
+    font-size: 13px;
+  }
+
+  .feedback-container img {
+    width: 120px;
+    height: 70px;
+  }
+
+  .feedback-content h2 {
+    font-size: 20px;
+  }
+
+  .feedback-content p {
+    font-size: 13px;
+    line-height: 18px;
+  }
 }

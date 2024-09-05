@@ -4,7 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
+    <!-- css link  -->
     <link rel="stylesheet" href="/css/style.css" />
+    <!-- google font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- favicon link  -->
     <link
       rel="icon"
       type="image/png"
@@ -15,41 +24,28 @@
   </head>
   <body>
     <section class="container">
-   
       <div class="container-contents">
         <div class="icon-container">
-          <img src="/images/icon-star.svg" alt="icon-star">
+          <img src="/images/icon-star.svg" alt="icon-star" />
         </div>
         <h1 class="rating-container-heading">How did we do?</h1>
-      <p class="rating-container-para">
-        Please let us know how we did with your support request. All feedback is
-        appreciated to help us improve our offering!
-      </p>
-      <div class="rating-container">
-        <input type="radio"  name="options" checked>
-        <label for="option1">1</label>
-      
-        <input type="radio"  name="options">
-        <label for="option2">2</label>
-      
-        <input type="radio"  name="options" >
-        <label for="option3">3</label>
-      </div>
-      <div class="button-container">
-        <button class="btn-submit">Submit</button>
-      </div>
-      <!-- <div class="feedback-container">
-        <img src="/images/illustration-thank-you.svg" alt="illustration-thank-you">
-        <div class="feedback-para-container">
-          <p>You selected 4 out of 5</p>
+        <p class="rating-container-para">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <div class="rating-container">
+          <!-- dynamically generating rating items  -->
         </div>
-        <div class="feedback-content">
-          <h2 class="feedback-heading">Thank You</h2>
-          <p class="feedback-para">Thank you! We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+        <div class="button-container">
+          <button onclick="handleSubmit()" class="btn-submit">Submit</button>
         </div>
-      </div> -->
       </div>
+      <div class="container-submitted">
+        <!-- dynamically generating submitted items  -->
+      </div>
+      <p class="credit-text">Crafted with care by Md.Rakibur Rahman ✨🎨</p>
     </section>
+    <!-- javaScript link  -->
     <script src="/js/script.js"></script>
   </body>
 </html>
