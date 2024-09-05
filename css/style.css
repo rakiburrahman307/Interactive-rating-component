@@ -1,0 +1,102 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: hsl(216, 12%, 8%);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.container-contents {
+  background-color: hsl(213, 19%, 18%);
+  width: 400px;
+  border-radius: 25px;
+  height: 300px;
+  padding: 28px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+.icon-container {
+  background-color: hsl(213, 18%, 22%);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-items: center;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 100%;
+  box-shadow: 0.3px 0.3px 2px hsl(213, 18%, 22%);
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+.icon-container img {
+  width: 15px;
+  height: 15px;
+  margin: auto;
+}
+
+.rating-container-heading {
+  color: hsl(0, 0%, 100%);
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.rating-container-pra {
+  color: hsl(217, 12%, 63%);
+  font-size: 15px;
+  text-wrap: wrap;
+  text-justify: auto;
+  margin-bottom: 25px;
+}
+.rating-container {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+}
+.rating-container input[type="radio"] {
+  display: none;
+}
+.rating-container label {
+  width: 50px;
+  height: 50px;
+  padding: 2px;
+  cursor: pointer;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(213, 18%, 22%);
+  box-shadow: 0.3px 0.3px 2px hsl(213, 18%, 22%);
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.5s ease;
+  -webkit-transition: background-color 0.5s ease;
+  -moz-transition: background-color 0.5s ease;
+  -ms-transition: background-color 0.5s ease;
+  -o-transition: background-color 0.5s ease;
+}
+.rating-container input[type="radio"]:checked + label {
+  background-color: hsl(0, 0%, 100%);
+  color: black;
+}
+.rating-container label:hover {
+  background-color: hsl(25, 97%, 53%);
+}
+.button-container{
+    
+}
